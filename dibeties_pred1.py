@@ -35,12 +35,6 @@ X_train, X_test, Y_train, Y_test = train_test_split(X,Y, test_size = 0.2, strati
 print(X.shape, X_train.shape, X_test.shape)
 
 import mlflow
-mlflow.set_tracking_uri("https://dagshub.com/Rasheedabanu606/MLOPS_Final.mlflow")
-
-import os
-os.environ["MLFLOW_TRACKING_URI"] = "https://dagshub.com/Rasheedabanu606/MLOPS_Final.mlflow"
-os.environ["MLFLOW_TRACKING_USERNAME"] = "Rasheedabanu606"
-os.environ["MLFLOW_TRACKING_PASSWORD"] = "8b59378253ce9855de513080bf422889a8559050"
 
 # Define the experiment name
 experiment_name = "diabetes_prediction_experiment"
